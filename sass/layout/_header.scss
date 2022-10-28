@@ -1,0 +1,120 @@
+.header {
+  border-bottom: var(--header-border-color);
+
+  &__navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+    border-bottom: #000000;
+  }
+
+  &-contacts {
+    display: flex;
+    justify-content: center;
+
+    &__item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:hover .header-contacts__icon {
+        fill: var(--accent-color);
+      }
+      &:hover .header-contacts__link {
+        color: var(--accent-color);
+      }
+      &:not(:last-child) {
+        margin-right: 50px;
+      }
+    }
+  }
+}
+
+.header-list__link,
+.header-contacts__link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  padding: 32px 0;
+  display: block;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+  color: var(--primary-text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-contacts__icon--smartphone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: var(--primary-text-color);
+}
+
+.header-contacts__icon--envelope {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: var(--primary-text-color);
+}
+
+.header-list {
+  display: flex;
+  gap: 57px;
+}
+
+.header-list__link.current {
+  color: var(--accent-color);
+}
+
+.header-logo {
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+  margin-right: 97px;
+}
+
+span.header-logo__span--black {
+  color: var(--header-link-second-color);
+}
+
+.current::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  position: absolute;
+  bottom: 0;
+  border-radius: 4px;
+}
+
+.header-list__item {
+  position: relative;
+  :not(:last-child) {
+    margin-right: 53px;
+  }
+}
+
+.header-list__link {
+  color: var(--secondary-text-color);
+}

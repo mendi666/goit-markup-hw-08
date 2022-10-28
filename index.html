@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebStudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <nav class="header__navigation">
+          <a class="header-logo" href=""
+            >Web<span class="header-logo__span header-logo__span--black"
+              >Studio</span
+            ></a
+          >
+          <ul class="header-list">
+            <li class="header-list__item">
+              <a class="header-list__link current" href="">Studio</a>
+            </li>
+            <li class="header-list__item">
+              <a class="header-list__link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="header-list__item">
+              <a class="header-list__link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-contacts">
+          <li class="header-contacts__item">
+            <a class="header-contacts__link" href="mailto:info@devstudio.com">
+              <svg
+                class="header-contacts__icon header-contacts__icon--envelope"
+              >
+                <use href="./images/symbol-defs.svg#icon-envelope"></use></svg
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="header-contacts__item">
+            <a class="header-contacts__link" href="tel:+380961111111"
+              ><svg
+                class="header-contacts__icon header-contacts__icon--smartphone"
+              >
+                <use href="./images/symbol-defs.svg#icon-smartphone"></use></svg
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container hero-container">
+          <h1 class="hero-title">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
+          <button class="hero-btn" data-modal-open type="button">
+            Request our service
+          </button>
+        </div>
+      </section>
+      <section class="benefits">
+        <div class="container benefits__container">
+          <h2 class="visually-hidden">Benefits</h2>
+          <ul class="benefits-list">
+            <li class="benefits-list__item benefits-list__item--satellite">
+              <h3 class="benefits-list__name">ATTENTION TO DETAILS</h3>
+              <p class="benefits-text">
+                We go into all the details and processes of your business to
+                develop a customized solution.
+              </p>
+            </li>
+            <li class="benefits-list__item benefits-list__item--clock">
+              <h3 class="benefits-list__name">PUNCTUALITY</h3>
+              <p class="benefits-text">
+                With us, you can feel safe and secure. An important principle of
+                the company: respect your time and respect the agreed deadlines.
+              </p>
+            </li>
+            <li class="benefits-list__item benefits-list__item--laptop">
+              <h3 class="benefits-list__name">PLANNING</h3>
+              <p class="benefits-text">
+                You will be able to observe and participate in every phase of
+                solution development and implementation.
+              </p>
+            </li>
+            <li class="benefits-list__item benefits-list__item--astrounaut">
+              <h3 class="benefits-list__name">MODERN TECHNOLOGIES</h3>
+              <p class="benefits-text">
+                We use innovative tools to solve assigned tasks. It's time to
+                simplify work processes.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="whatwedo">
+        <div class="container">
+          <h2 class="whatwedo__title">What we do</h2>
+          <ul class="whatwedo-list">
+            <li class="whatwedo-list__item">
+              <img
+                src="./images/img-1.jpg"
+                alt="somebody typing on keyboard connected to tablet"
+                width="370"
+                height="294"
+              />
+              <div class="whatwedo-list__box">DESKTOP APPS</div>
+            </li>
+            <li class="whatwedo-list__item">
+              <img
+                src="./images/img-2.jpg"
+                alt="somebody looking at phone in front of laptop"
+                width="370"
+                height="294"
+              />
+              <div class="whatwedo-list__box">MOBILE APPS</div>
+            </li>
+            <li class="whatwedo-list__item">
+              <img
+                src="./images/img-3.jpg"
+                alt="somebody looking at tablet choosing a color in it "
+                width="370"
+                height="294"
+              />
+              <div class="whatwedo-list__box">DESIGN SOLUTIONS</div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="team">
+        <div class="container">
+          <h2 class="team-title">Our Team</h2>
+          <ul class="team-list list">
+            <li class="team-item">
+              <img
+                src="./images/team-img-1.jpg"
+                alt="man in glasses"
+                width="270"
+                height="260"
+              />
+              <div class="team-information">
+                <h3 class="team-name">Igor Demyanenko</h3>
+                <p class="team-job-position">Product Designer</p>
+                <ul class="team-soc-list">
+                  <li class="team-soc-item">
+                    <a class="team-soc-link" href=""
+                      ><svg class="team-soc-icon" width="20" height="20">
+                        <use
+                          href="./images/symbol-defs.svg#icon-instagram"
+                        ></use></svg
+                    ></a>
+                  </li>
+                  <li class="team-soc-item">
+                    <a class="team-soc-link" href=""
+                      ><svg class="team-soc-icon" width="20" height="20">
+                        <use
+                          href="./images/symbol-defs.svg#icon-twitter"
+                        ></use></svg
+                    ></a>
+                  </li>
+                  <li class="team-soc-item">
+                    <a class="team-soc-link" href=""
+                      ><svg class="team-soc-icon" width="20" height="20">
+                        <use
+                          href="./images/symbol-defs.svg#icon-facebook"
+                        ></use></svg
+                    ></a>
+                  </li>
+                  <li class="team-soc-item">
+                    <a class="team-soc-link" href=""
+                      ><svg class="team-soc-icon" width="20" height="20">
+                        <use
+                          href="./images/symbol-defs.svg#icon-linkedin"
+                        ></use></svg
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="team-item">
+              <img
+                src="./images/team-img-2.jpg"
+                alt="woman in glasses"
+                width="270"
+                height="260"
+              />
+              <div class="team-information">
+                <h3 class="team-name">Olga Repina</h3>
+                <p class="team-job-position">Frontend Developer</p>
+                <ul class="team-soc-list">
+                  <li class="team-soc-item">
+                    <a class="team-soc-link" href=""
+                      ><svg class="team-soc-icon" width="20" height="20">
+                        <use
+                          href="./images/symbol-defs.svg#icon-instagram"
+                        ></use></svg
+                    ></a>
+                  </li>
+                  <li class="team-soc-item">
+                    <a class="team-soc-link" href=""
+                      ><svg class="team-soc-icon" width="20" height="20">
+                        <use
+                          href="./images/symbol-defs.svg#icon-twitter"
+                        ></use></svg
+                    ></a>
+                  </li>
+                  <li class="team-soc-item">
+                    <a class="team-soc-link" href=""
+                      ><svg class="team-soc-icon" width="20" height="20">
+                        <use
+                          href="./images/symbol-defs.svg#icon-facebook"
+                        ></use></svg
+                    ></a>
+                  </li>
+                  <li class="team-soc-item">
+                    <a class="team-soc-link" href=""
+                      ><svg class="team-soc-icon" width="20" height="20">
+                        <use
+                          href="./images/symbol-defs.svg#icon-linkedin"
+                        ></use></svg
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="team-item">
+              <img
+                src="./images/team-img-3.jpg"
+                alt="man"
+                width="270"
+                height="260"
+              />
+              <div class="team-information">
+                <h3 class="team-name">Nikolai Tarasov</h3>
+                <p class="team-job-position">Marketing</p>
+                <ul class="team-soc-list">
+                  <li class="team-soc-item">
+                    <a class="team-soc-link" href=""
+                      ><svg class="team-soc-icon" width="20" height="20">
+                        <use
+                          href="./images/symbol-defs.svg#icon-instagram"
+                        ></use></svg
+                    ></a>
+                  </li>
+                  <li class="team-soc-item">
+                    <a class="team-soc-link" href=""
+                      ><svg class="team-soc-icon" width="20" height="20">
+                        <use
+                          href="./images/symbol-defs.svg#icon-twitter"
+                        ></use></svg
+                    ></a>
+                  </li>
+                  <li class="team-soc-item">
+                    <a class="team-soc-link" href=""
+                      ><svg class="team-soc-icon" width="20" height="20">
+                        <use
+                          href="./images/symbol-defs.svg#icon-facebook"
+                        ></use></svg
+                    ></a>
+                  </li>
+                  <li class="team-soc-item">
+                    <a class="team-soc-link" href=""
+                      ><svg class="team-soc-icon" width="20" height="20">
+                        <use
+                          href="./images/symbol-defs.svg#icon-linkedin"
+                        ></use></svg
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="team-item">
+              <img
+                src="./images/team-img-4.jpg"
+                alt="man in glasses"
+                width="270"
+                height="260"
+              />
+              <div class="team-information">
+                <h3 class="team-name">Mikhail Ermakov</h3>
+                <p class="team-job-position">UI Designer</p>
+                <ul class="team-soc-list">
+                  <li class="team-soc-item">
+                    <a class="team-soc-link" href=""
+                      ><svg class="team-soc-icon" width="20" height="20">
+                        <use
+                          href="./images/symbol-defs.svg#icon-instagram"
+                        ></use></svg
+                    ></a>
+                  </li>
+                  <li class="team-soc-item">
+                    <a class="team-soc-link" href=""
+                      ><svg class="team-soc-icon" width="20" height="20">
+                        <use
+                          href="./images/symbol-defs.svg#icon-twitter"
+                        ></use></svg
+                    ></a>
+                  </li>
+                  <li class="team-soc-item">
+                    <a class="team-soc-link" href=""
+                      ><svg class="team-soc-icon" width="20" height="20">
+                        <use
+                          href="./images/symbol-defs.svg#icon-facebook"
+                        ></use></svg
+                    ></a>
+                  </li>
+                  <li class="team-soc-item">
+                    <a class="team-soc-link" href=""
+                      ><svg class="team-soc-icon" width="20" height="20">
+                        <use
+                          href="./images/symbol-defs.svg#icon-linkedin"
+                        ></use></svg
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="customers">
+        <div class="container">
+          <h2 class="customers-title">Regular Customers</h2>
+          <ul class="customer-list">
+            <li class="customer-item">
+              <a class="customer-link" href=""
+                ><svg class="customer-icon">
+                  <use href="./images/symbol-defs.svg#icon-logo-1"></use></svg
+              ></a>
+            </li>
+            <li class="customer-item">
+              <a class="customer-link" href=""></a
+              ><svg class="customer-icon">
+                <use href="./images/symbol-defs.svg#icon-logo-2"></use>
+              </svg>
+            </li>
+            <li class="customer-item">
+              <a class="customer-link" href=""
+                ><svg class="customer-icon">
+                  <use href="./images/symbol-defs.svg#icon-logo-3"></use></svg
+              ></a>
+            </li>
+            <li class="customer-item">
+              <a class="customer-link" href=""
+                ><svg class="customer-icon">
+                  <use href="./images/symbol-defs.svg#icon-logo-4"></use></svg
+              ></a>
+            </li>
+            <li class="customer-item">
+              <a class="customer-link" href=""
+                ><svg class="customer-icon">
+                  <use href="./images/symbol-defs.svg#icon-logo-5"></use></svg
+              ></a>
+            </li>
+            <li class="customer-item">
+              <a class="customer-link" href=""
+                ><svg class="customer-icon">
+                  <use href="./images/symbol-defs.svg#icon-logo-6"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-information">
+          <a class="footer-link" href=""
+            >Web<span class="second-color-footer">Studio</span></a
+          >
+          <address>
+            <ul class="footer-list">
+              <li class="footer-text">695 Park Ave, New York, NY 10065</li>
+              <li class="footer-text">United States</li>
+              <li>
+                <a class="footer-contact" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a class="footer-contact" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-links">
+          <p class="footer-links-text">FIND US ON</p>
+          <ul class="footer-links-list">
+            <li class="footer-links-item">
+              <a class="footer-soc-link" href=""
+                ><svg class="footer-soc-icon">
+                  <use
+                    href="./images/symbol-defs.svg#icon-instagram"
+                  ></use></svg
+              ></a>
+            </li>
+            <li class="footer-links-item">
+              <a class="footer-soc-link" href=""
+                ><svg class="footer-soc-icon">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use></svg
+              ></a>
+            </li>
+            <li class="footer-links-item">
+              <a class="footer-soc-link" href=""
+                ><svg class="footer-soc-icon">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use></svg
+              ></a>
+            </li>
+            <li class="footer-links-item">
+              <a class="footer-soc-link" href=""
+                ><svg class="footer-soc-icon">
+                  <use href="./images/symbol-defs.svg#icon-linkedin"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-form">
+          <p class="footer-form-text">Subscribe to the newsletter</p>
+          <form class="footer-form-subscribe">
+            <input
+              type="email"
+              name="e-mail"
+              id="e-mail"
+              class="footer-form-input"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="footer-submit-btn">
+              Subscribe
+              <svg class="footer-input-icon">
+                <use
+                  href="./images/symbol-defs.svg#icon-send"
+                  width="18"
+                  height="18"
+                ></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <p class="modal-title">
+          Leave your information and we'll call you back
+        </p>
+        <form>
+          <div class="modal-field">
+            <div class="input-wrap">
+              <label for="name" class="modal-label">Name</label>
+              <input type="text" class="modal-input" name="name" id="name" />
+              <svg class="modal-input-icon">
+                <use
+                  href="./images/symbol-defs.svg#icon-modal-person"
+                  width="18"
+                  height="18"
+                ></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-field">
+            <div class="input-wrap">
+              <label for="tel" class="modal-label">Telephone</label>
+              <input type="tel" class="modal-input" name="tel" id="tel" />
+              <svg class="modal-input-icon">
+                <use
+                  href="./images/symbol-defs.svg#icon-modal-phone"
+                  width="18"
+                  height="18"
+                ></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <div class="input-wrap">
+              <label for="mail" class="modal-label">E-mail</label>
+              <input type="email" class="modal-input" name="mail" id="mail" />
+              <svg class="modal-input-icon">
+                <use
+                  href="./images/symbol-defs.svg#icon-modal-mail"
+                  width="18"
+                  height="18"
+                ></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field-comment">
+            <label for="comment" class="modal-label">Comments</label>
+            <textarea
+              name="comment"
+              class="modal-comment"
+              id="comment"
+              placeholder="Enter the text"
+            ></textarea>
+          </div>
+          <div class="modal-field-checkbox">
+            <input
+              type="checkbox"
+              class="input-check"
+              name="privacy"
+              value="true"
+              id="privacy"
+            />
+            <label for="privacy" class="check-text">
+              <span>
+                <svg class="check-icon">
+                  <use
+                    href="./images/symbol-defs.svg#icon-checkbox"
+                    width="11"
+                    height="8"
+                  ></use></svg></span
+              >I agree with the newsletter and accept the Terms and Conditions
+            </label>
+          </div>
+
+          <button type="submit" class="modal-submit-btn">Send</button>
+        </form>
+        <button type="button" class="modal-btn" data-modal-close>
+          <svg class="modal-close-icon">
+            <use
+              href="./images/symbol-defs.svg#close-icon"
+              width="18"
+              height="18"
+            ></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>
