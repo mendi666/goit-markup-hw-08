@@ -397,7 +397,7 @@ body {
 }
 
 span.header-logo__span--black {
-  color: var(--header-link-second-color);
+  color: tomato;
 }
 
 .current::after {
