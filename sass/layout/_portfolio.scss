@@ -8,6 +8,7 @@
   margin: -30px 0px 0px -30px;
 }
 .portfolio-item {
+  width: 100%;
   margin: 30px 0px 0px 30px;
   transition-property: box-shadow;
   transition-duration: 250ms;
@@ -19,6 +20,11 @@
   }
   &:hover .portfolio-overlay {
     transform: translateY(0);
+  }
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
 }
 

@@ -7,19 +7,23 @@
   text-transform: uppercase;
   color: var(--contrast-color);
   margin-bottom: 20px;
+  display: block;
+  text-align: center;
+  margin-top: 60px;
 }
 
-.footer-container {
-  display: flex;
-  gap: 70px;
-  align-items: baseline;
-}
+// .footer-container {
+//   display: flex;
+//   gap: 70px;
+//   align-items: baseline;
+// }
 
 .footer-links-list {
   display: flex;
   justify-content: center;
   margin-top: 16px;
   gap: 10px;
+  margin-bottom: 60px;
 }
 
 .footer-soc-link {
@@ -67,7 +71,9 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
-  margin-bottom: 9px;
+  //margin-bottom: 9px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 span.second-color-footer {
@@ -80,9 +86,11 @@ span.second-color-footer {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--contrast-color);
+  text-align: center;
 }
 
 .footer-contact {
+  display: block;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -96,6 +104,7 @@ span.second-color-footer {
   &:focus {
     color: var(--accent-color);
   }
+  text-align: center;
 }
 
 .footer-form {
@@ -113,17 +122,23 @@ span.second-color-footer {
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
+  display: block;
+  text-align: center;
 }
 
 .footer-form-input {
-  width: 358px;
+  width: 100%;
+  max-width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
-  padding-left: 16px;
+  //padding-left: 16px;
   outline: none;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .footer-submit-btn {
@@ -141,21 +156,15 @@ span.second-color-footer {
   color: #ffffff;
   border: none;
   outline: none;
-  margin-left: 12px;
-  padding: 10px 28px;
-  display: flex;
+  //margin-left: 12px;
+  //padding: 10px 28px;
+  display: block;
   align-items: center;
-  justify-content: center;
+  margin: 0 auto;
 }
 
 .footer-input-icon {
   width: 18px;
   height: 18px;
   margin-left: 30px;
-}
-
-.footer-form-subscribe {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
 }

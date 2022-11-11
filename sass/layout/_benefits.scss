@@ -1,5 +1,6 @@
 .benefits {
   padding-top: 94px;
+  margin-bottom: 60px;
 
   &__container {
     display: flex;
@@ -23,10 +24,12 @@
 }
 
 .benefits-list {
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-items: center;
   &__item {
-    max-width: 270px;
+    width: 100%;
     &::before {
       display: block;
       content: "";
@@ -38,7 +41,7 @@
       margin-bottom: 30px;
     }
     &:not(:last-child) {
-      margin-right: 30px;
+      margin-bottom: 30px;
     }
   }
   &__name {
@@ -50,6 +53,8 @@
     text-transform: uppercase;
     color: var(--secondary-text-color);
     margin-bottom: 9.41px;
+    text-align: center;
+    width: 100%;
   }
 }
 

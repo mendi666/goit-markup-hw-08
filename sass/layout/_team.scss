@@ -1,5 +1,6 @@
 .team-soc-list {
   display: flex;
+
   justify-content: center;
   margin-top: 16px;
   gap: 10px;
@@ -44,7 +45,8 @@
 .team-list {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .team-item {
@@ -52,6 +54,14 @@
   border-radius: 0px 0px 4px 4px;
   box-shadow: var(--box-shadow);
   width: calc(100% - 60px / 3);
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
 }
 
 .team-title {
