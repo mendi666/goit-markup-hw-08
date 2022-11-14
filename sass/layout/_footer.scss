@@ -9,6 +9,9 @@
   margin-bottom: 20px;
   display: block;
   text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
   // margin-top: 60px;
 }
 
@@ -120,6 +123,7 @@
   text-align: center;
   @media screen and (min-width: 1200px) {
     margin-bottom: 9px;
+    text-align: left;
   }
 }
 
@@ -134,6 +138,9 @@ span.second-color-footer {
   letter-spacing: 0.03em;
   color: var(--contrast-color);
   text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .footer-contact {
@@ -152,6 +159,9 @@ span.second-color-footer {
     color: var(--accent-color);
   }
   text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 /* ////////////FOOTER FORM/////////////// */

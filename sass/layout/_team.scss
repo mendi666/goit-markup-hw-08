@@ -35,7 +35,12 @@
 
 .team {
   background-color: var(--secondary-bg-color);
-  padding: 94px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
 }
 
 .team-information {
@@ -68,7 +73,7 @@
     width: calc((100% - 30px) / 2);
   }
   @media screen and (min-width: 1200px) {
-    width: calc((100% - 30px) / 5);
+    width: calc((100% - 90px) / 4);
   }
 }
 
@@ -81,7 +86,10 @@
   color: var(--secondary-text-color);
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 .team-name {
   font-style: normal;

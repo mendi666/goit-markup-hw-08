@@ -40,7 +40,11 @@
 }
 
 .customers {
-  padding: 94px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
 }
 
 .customers-title {
